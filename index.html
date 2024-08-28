@@ -21,10 +21,11 @@
       // 地図を表示
       var map = L.map('map').setView([35.681236, 139.767125], 13); // 東京駅を中心に設定
 
-      // 国土地理院のタイルレイヤーを追加
+      // 国土地理院のタイルレイヤーを追加し、透明度を設定
       L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
         attribution:
           '<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>',
+        opacity: 0.5, // 透明度を50%に設定
       }).addTo(map);
     </script>
   </body>
